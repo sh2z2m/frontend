@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front5-deployment
+  labels:
+    app: front5
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: front5
+  template:
+    metadata:
+      labels:
+        app: front5
+    spec:
+      containers:
+      - name: frontend
+        image: shazzam/client1:latest # image Docker du frontend
+        ports:
+        - containerPort: 80
+
