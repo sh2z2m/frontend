@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: shazzam/client1:latest # image Docker du frontend
+        image: shazzam/app:latest # image Docker du frontend
         ports:
         - containerPort: 80
 
