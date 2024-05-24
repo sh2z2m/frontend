@@ -1,7 +1,7 @@
-apiVersion: apps/v1
+loapiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: front5
+  name: front5-deployment 
   labels:
     app: front5
 spec:
